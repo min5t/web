@@ -1,0 +1,86 @@
+.aboutme {
+    background-color: #95B9A6;
+    height: 593px;
+    width: 1478px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic01 {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    left: 58px;
+    top: 40px;
+}
+
+.inf {
+    color: rgb(107, 102, 102);
+    font-size: 44px;
+    position: relative;
+    left: 394px;
+    top: -270px;
+}
+
+.text {
+    width: 490px;
+    height: 490px;
+    position: relative;
+    left: 780px;
+    top: -590px;
+    background-color: #a5c0b1;
+    border-radius: 50px;
+    box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+        inset 15px 15px 10px rgba(255, 255, 255, 0.55),
+        -15px -15px 25px rgba(255, 255, 255, 0.35),
+        inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.texttitle {
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.sen {
+    color: rgb(107, 102, 102);
+    position: relative;
+    top: 45px;
+    font-size: 44px;
+    text-align: center;
+
+}
+
+.textlast {
+    font-weight: bold;
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    bottom: -100px;
+}
+
+.icon {
+    position: relative;
+    left: 58px;
+    top: -765px;
+    padding-bottom: 10px;
+}
+
+.icontext a {
+    text-decoration: none;
+    color: rgb(107, 102, 102);
+    font-size: 30px;
+    position: relative;
+    left: 130px;
+    top: -1000px;
+    line-height: 75px;
+}
