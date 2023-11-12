@@ -27,6 +27,7 @@ div.skill02 {
 
 }
 
+
 .smalltitle {
     text-align: center;
     font-size: 35px;
@@ -204,4 +205,104 @@ div.skill02 {
     100% {
         width: 75%;
     }
+}
+
+.circlebox {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 70px;
+}
+
+.c01 {
+    --width: 150px;
+    --percent: 90;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px 10px;
+    background-image: conic-gradient(rgb(5, 144, 58) var(--deg), #e9e5e2 var(--deg));
+    position: relative;
+}
+
+.inside01 {
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #eee;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.c02 {
+    --width: 150px;
+    --percent: 95;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px 10px;
+    background-image: conic-gradient(rgb(5, 144, 58) var(--deg), #e9e5e2 var(--deg));
+    position: relative;
+}
+
+.inside02 {
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #eee;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.c03 {
+    --width: 150px;
+    --percent: 100;
+    --deg: calc(360deg * calc(var(--percent) / 100));
+    width: var(--width);
+    height: var(--width);
+    border-radius: 50%;
+    margin: 0px 10px;
+    background-image: conic-gradient(rgb(5, 144, 58) var(--deg), #e9e5e2 var(--deg));
+    position: relative;
+}
+
+.inside03 {
+    --bar-width: 30px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #eee;
+    width: calc(var(--width) - var(--bar-width));
+    height: calc(var(--width) - var(--bar-width));
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    position: relative;
+    top: 120%;
+
 }

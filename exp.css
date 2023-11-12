@@ -1,6 +1,121 @@
 .exp {
     background-color: #E8F4E8;
     width: 1478px;
+    height: 650px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container02 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.container02 .card {
+    position: relative;
+    max-width: 450px;
+    height: 420px;
+    margin: 30px 15px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container02 .card:hover {
+    height: 540px;
+}
+
+.container02 .imgbox:hover #c2 {
+    transform: rotateY(0deg);
+}
+
+.container02 .imgbox:hover #c1 {
+    transform: rotateY(180deg);
+}
+
+.container02 .card .imgbox {
+    position: relative;
+    width: 400px;
+    height: 280px;
+    border-radius: 5px;
+    overflow: hidden;
+    top: -60px;
+    left: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container02 .card .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.container02 .card .textbox {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container02 .card .textbox p {
+    text-align: left;
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(107, 102, 102);
+}
+
+.container02 .card:hover .textbox {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition: 0.9s;
+}
+
+.expbottom {
+    display: flex;
+    justify-content: space-around;
+    transform: 0.3s;
+}
+
+.explink01 {
+    width: 100px;
+    height: 40PX;
+    background-color: rgba(209, 246, 215, 0.8);
+    border-radius: 50PX;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40PX;
+
+}
+
+.explink02 {
+    width: 100px;
+    height: 40PX;
+    background-color: rgba(209, 246, 215, 0.8);
+    border-radius: 50PX;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.explink01 a,
+.explink02 a {
+    color: rgb(107, 102, 102);
+    text-decoration: none;
 }

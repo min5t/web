@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +19,7 @@ body {
     padding: 0px;
 }
 
-.container {
+.container01 {
     margin-left: auto;
     margin-right: auto;
     width: 1478px;
@@ -110,6 +114,21 @@ nav a {
 
 .title::after {
     right: 0;
+}
+
+.backtop {
+    position: fixed;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 60px;
+    border-radius: 50px;
+    font-size: 40px;
+    background-color: rgba(95, 158, 160, 0.467);
+    color: rgb(222, 242, 237);
 }
 
 footer {
