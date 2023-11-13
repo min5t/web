@@ -7,12 +7,9 @@
 }
 
 .pic01 {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 20px;
-    position: relative;
-    left: 58px;
-    top: 40px;
 }
 
 .inf {
@@ -20,15 +17,18 @@
     font-size: 44px;
     position: relative;
     left: 394px;
-    top: -270px;
+    top: -300px;
 }
 
-.text {
-    width: 490px;
-    height: 490px;
+.picbox {
+    width: 340px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    left: 780px;
-    top: -590px;
+    left: 50px;
+    top: 30px;
     background-color: #a5c0b1;
     border-radius: 50px;
     box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
@@ -38,12 +38,21 @@
 
 }
 
+.textborder {
+    position: relative;
+    top: -620px;
+    left: 700px;
+    width: 450px;
+    height: 450px;
+    border-style: ridge;
+
+}
+
 .texttitle {
     color: red;
     font-weight: bold;
     font-size: 50px;
     position: relative;
-    top: 15px;
     text-align: center;
     vertical-align: middle;
 
@@ -52,7 +61,6 @@
 .sen {
     color: rgb(107, 102, 102);
     position: relative;
-    top: 45px;
     font-size: 44px;
     text-align: center;
 
@@ -65,13 +73,13 @@
     text-align: center;
     vertical-align: middle;
     position: relative;
-    bottom: -100px;
+
 }
 
 .icon {
     position: relative;
     left: 58px;
-    top: -765px;
+    top: -755px;
     padding-bottom: 10px;
 }
 
@@ -81,6 +89,6 @@
     font-size: 30px;
     position: relative;
     left: 130px;
-    top: -1000px;
+    top: -985px;
     line-height: 75px;
 }

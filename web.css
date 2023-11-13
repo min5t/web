@@ -23,14 +23,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1478px;
-    height: 833px;
+    height: 500px;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .images {
     width: 7390px;
-    height: 833px;
+    height: 500px;
+    transform: 0.3s;
     animation: move 12s infinite;
 }
 
@@ -38,31 +39,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1478px;
-    height: 833px;
+    height: 100%;
     float: left;
 }
 
 @keyframes move {
 
-    0% {
-        margin-left: 0px;
+    0%,
+    30% {
+        transform: translateX(0);
     }
 
-    25% {
-        margin-left: 0px;
+    33%,
+    63% {
+        transform: translateX(-1478px);
     }
 
-    50% {
-        margin-left: -1478px;
-    }
-
-    75% {
-        margin-left: -2956px;
-
+    66%,
+    96% {
+        transform: translateX(-2956px);
     }
 
     100% {
-        margin-left: -4434px;
+        transform: translateX(-4430px);
 
     }
 
