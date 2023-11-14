@@ -25,9 +25,22 @@
     align-items: center;
 }
 
+h2 {
+    font-size: 44px;
+    padding: 20px;
+}
+
+
+.inttext {
+    color: rgb(107, 102, 102);
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
 
 .gameblock,
-.jkblock,
 .animeblock {
     display: grid;
     margin-bottom: 40px;
@@ -40,24 +53,6 @@
     background-color: rgba(255, 255, 255, 0.585);
 }
 
-
-h2 {
-    font-size: 44px;
-    padding: 20px;
-}
-
-.gameslide,
-.animeslide {
-    width: 550px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-    top: -30px;
-    border-radius: 20px;
-    vertical-align: middle;
-    background-color: transparent
-}
-
 .gameslide img,
 .animeslide img {
     width: 100%;
@@ -68,21 +63,56 @@ h2 {
     opacity: 0;
 }
 
-.gameslide img:nth-child(2) {
+.gameslide {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    top: -30px;
+    align-items: center;
+    border-radius: 20px;
+    vertical-align: middle;
+    background-color: transparent
+}
+
+
+.animeslide {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    left: 60px;
+    top: -30px;
+    align-items: center;
+    border-radius: 20px;
+    vertical-align: middle;
+    background-color: transparent
+}
+
+.gameslide img:nth-child(2),
+.animeslide img:nth-child(2) {
     animation-delay: 5s;
 }
 
-.gameslide img:nth-child(3) {
+.gameslide img:nth-child(3),
+.animeslide img:nth-child(3) {
     animation-delay: 10s;
 }
 
-.gameslide img:nth-child(4) {
+.gameslide img:nth-child(4),
+.animeslide img:nth-child(4) {
     animation-delay: 15s;
 }
 
-.gameslide img:nth-child(4) {
+.gameslide img:nth-child(5),
+.animeslide img:nth-child(5) {
     animation-delay: 20s;
 }
+
 
 @keyframes slide {
     10% {
@@ -102,13 +132,18 @@ h2 {
     }
 }
 
-.inttext {
-    position: relative;
-    bottom: 20px;
-    text-align: center;
-    font-size: 25px;
+.jkblock,
+.pochaccoblock {
+    display: grid;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    align-items: center;
+    width: 680px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 10px rgba(160, 186, 172, 0.585);
+    background-color: rgba(160, 186, 172, 0.585);
 }
-
 
 .jk {
     text-align: center;
@@ -120,4 +155,69 @@ h2 {
     height: 300px;
     position: relative;
     top: 0px;
+}
+
+.flip-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.pochaflip {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 100px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-container:hover .pochaflip {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.pochacco01 img,
+.pochacco02 img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.pochacco01 {
+    z-index: 2;
+}
+
+.pochacco02 {
+    background-position: -305px bottom;
+    transform: rotateY(-180deg);
+}
+
+.box:hover .pochacco01 {
+    transform: rotateY(-180deg);
+}
+
+.box:hover .pochacco02 {
+    transform: rotateY(0deg);
 }

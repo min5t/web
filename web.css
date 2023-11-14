@@ -23,14 +23,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1478px;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
     border-radius: 10px;
 }
 
 .images {
     width: 7390px;
-    height: 500px;
+    height: 600px;
     transform: 0.3s;
     animation: move 12s infinite;
 }
