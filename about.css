@@ -21,7 +21,6 @@
     top: -300px;
 }
 
-
 .picbox {
     width: 340px;
     height: 340px;
@@ -37,7 +36,6 @@
         inset 15px 15px 10px rgba(255, 255, 255, 0.55),
         -15px -15px 25px rgba(255, 255, 255, 0.35),
         inset -1px -1px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .cover {
@@ -81,7 +79,6 @@
     color: rgb(107, 102, 102);
 }
 
-
 .sen1 {
     font-weight: bold;
     text-align: left;
@@ -90,9 +87,7 @@
     top: 10px;
     color: rgb(255, 255, 255);
     -webkit-animation: flicker 2s infinite;
-
 }
-
 
 .sen2 {
     font-weight: bold;
@@ -117,7 +112,6 @@
     100% {
         opacity: 1;
     }
-
 }
 
 .icon {
