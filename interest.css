@@ -43,7 +43,7 @@ h2 {
 .gameblock {
     display: grid;
     margin-bottom: 40px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 680px;
     height: 650px;
@@ -81,13 +81,13 @@ h2 {
     height: 300px;
     overflow: hidden;
     position: relative;
+    left: 20px;
     top: -30px;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 15px;
     vertical-align: middle;
     background-color: transparent
 }
-
 
 .animeslide {
     display: flex;
