@@ -40,11 +40,22 @@ h2 {
 }
 
 
-.gameblock,
-.animeblock {
+.gameblock {
     display: grid;
     margin-bottom: 40px;
     justify-content: space-around;
+    align-items: center;
+    width: 680px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.585);
+    background-color: rgba(255, 255, 255, 0.585);
+}
+
+.animeblock {
+    display: grid;
+    margin-bottom: 40px;
+    justify-content: center;
     align-items: center;
     width: 680px;
     height: 650px;
@@ -85,7 +96,7 @@ h2 {
     height: 300px;
     overflow: hidden;
     position: relative;
-    left: 60px;
+    left: 20px;
     top: -30px;
     align-items: center;
     border-radius: 20px;
